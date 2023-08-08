@@ -49,9 +49,7 @@ You can download CUCM from Cisco on a trial basis, or you can find it from one o
 ![034](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/ca224e3d-51ac-41e7-8ba6-6b5346ab0641)
 ![035](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/75ef2a1a-1eca-4b02-a540-22412a3e40e7)
 
-# **here, the NTP broke and i could not get it to fix in bridged mode. I had previously set this VM up in NAT mode
-#  and manually swicthed it after set up. I had to go back and switch this set up to NAT mode to finish installation. Below are the
-#  updated IP settings i made.**
+# **here, the NTP broke and i could not get it to fix in bridged mode. I had previously set this VM up in NAT mode and manually swicthed it after set up. I had to go back and switch this set up to NAT mode to finish installation. Below are the updated IP settings i made.**
 
 ![0001nat](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/b01e6a9a-29b2-482a-ba60-ed7b3fcc7067)
 
