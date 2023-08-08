@@ -15,11 +15,11 @@ You can download CUCM from Cisco on a trial basis, or you can find it from one o
 ![009](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/ee910183-b297-4c2e-86f7-3009d6fa237e)
 ![010](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/1a011768-8f0c-491b-a608-84db567e4302)
 
-This is what you will see if you click test
+**This is what you will see if you click test**
 
 ![011](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/648b99c0-6abf-4d23-b5e9-eddb509654ce)
 
-so do not click test
+**so do not click test**
 
 ![0012](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/f2bac999-6fa2-43e9-bee5-5f27489ea358)
 ![013](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/15902255-180a-4809-8322-24d585bac267)
@@ -38,7 +38,7 @@ so do not click test
 ![026](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/8c1e6293-a45b-4d25-a924-d6dc664c51a5)
 ![027](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/9f342f26-6644-4116-9761-179fefc35ae7)
 
-Just set the NTP to the default gateway address. 
+**Just set the NTP to the default gateway address.** 
 
 ![028](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/70e350d7-7bfe-4e39-a3e0-1f505daac2d1)
 ![029](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/e4b9f45b-a777-4fa0-a783-a1a940711d7a)
@@ -49,13 +49,13 @@ Just set the NTP to the default gateway address.
 ![034](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/ca224e3d-51ac-41e7-8ba6-6b5346ab0641)
 ![035](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/75ef2a1a-1eca-4b02-a540-22412a3e40e7)
 
-here, the NTP broke and i could not get it to fix in bridged mode. I had previously set this VM up in NAT mode
+**here, the NTP broke and i could not get it to fix in bridged mode. I had previously set this VM up in NAT mode
 and manually swicthed it after set up. I had to go back and switch this set up to NAT mode to finish installation. Below are the
-updated IP settings i made.
+updated IP settings i made.**
 
 ![0001nat](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/b01e6a9a-29b2-482a-ba60-ed7b3fcc7067)
 
-this is the virtual adapter i set the IP scheme too. I knew it was this one because vmnet1 is used for my gns3 VM
+**this is the virtual adapter i set the IP scheme too. I knew it was this one because vmnet1 is used for my gns3 VM**
 
 ![0002vmnet](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/79d23cf0-5563-48ec-9673-97e2785c7de4)
 ![0003network](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/fe164ca2-fc74-435d-a8f6-76fa1921ec62)
