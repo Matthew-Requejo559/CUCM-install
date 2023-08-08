@@ -123,4 +123,10 @@ You can download CUCM from Cisco on a trial basis, or you can find it from one o
 ![056](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/2fe881de-8d92-4aeb-b865-3f78977ee122)
 ![057](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/5ae5819b-f5c7-45f5-8172-2c6982830d4e)
 
+# **None of that worked. I set up an NTP server on my Ubuntu host and made my host IP of 192.168.1.183 as the NTP server. It worked. Was it ideal? Probably not in a working environment as my host machine's ip is not static.** 
+
+![058](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/4aab1de0-da3f-48a4-af88-ff25919958a0)
+![059](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/b8b50a37-2822-4f84-a9e7-a2a40436f11f)
+
+# **Went back and changed phone NTP reference to reflect new IP.**
 
