@@ -106,5 +106,21 @@ You can download CUCM from Cisco on a trial basis, or you can find it from one o
 
 ![048](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/b09c944d-279c-4975-b75d-acb2042a3ce9)
 
-# **Still broken. Let's try from the GUI
+# **Still broken. Let's try from the GUI**
+# **GUI did not work. Maybe because IP conflict with host machine. I have 3 physical NICS and one wireless NIC on my physical machine. I kept guest machine in bridged mode, hardlined my host machine, and set my realtekUSB WiFi adapter to connect to guest machine only. Restarted Tomcat, and GUI now works with the 192.168.1.166 address.** 
+
+![049](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/977d7e0d-8c17-4ae1-a5b3-357382fdfde9)
+
+# **Let's see if we can add the NTP now. If not, i will move on. Via the GUI we will go to: System>PhoneNTP reference>Add New**
+
+![049](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/a60b7c34-3583-4cb9-b029-e23d52850389)
+![050](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/29987605-f510-4850-8f45-f1c78a4d1afc)
+![051](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/35dc0fc0-02d5-4836-8748-af6a4efa3ae5)
+![052](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/81d29bf0-d762-4343-b16e-e3082dd79e55)
+![053](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/75ad0de2-0085-43e9-ae9c-bb01681ce9f3)
+![054](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/1b0c981e-d258-49de-a84e-885f206de62f)
+![055](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/c084a4c2-f32f-4774-82d9-cc28597cd15d)
+![056](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/2fe881de-8d92-4aeb-b865-3f78977ee122)
+![057](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/5ae5819b-f5c7-45f5-8172-2c6982830d4e)
+
 
