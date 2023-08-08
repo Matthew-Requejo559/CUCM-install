@@ -70,4 +70,6 @@ You can download CUCM from Cisco on a trial basis, or you can find it from one o
 
 # **if you run into a 404 error when trying to log into admin portal from the web GUI for the first time, try restarting the tomcat service from the CLI with: utils service restart Cisco Tomcat**
 
-# so, we have CUCM set up. Great! But there is a problem. We are in NAT mode, so, we cannot access CUCM from any device but the host machine. There is no router between the host and CUCM, so outside traffic will not route to the VM. There are different methods around this, such as setting up virtual routers, or using a router from GNS3. BUt i can only run 1 VM at a time with VMplayer. So, i will switch to bridged mode and change the IP scheme, and the NTP server. 
+# so, we have CUCM set up. Great! But there is a problem. We are in NAT mode, so, we cannot access CUCM from any device but the host machine. There is no router between the host and CUCM, so outside traffic will not route to the VM. There are different methods around this, such as setting up virtual routers, or using a router from GNS3. BUt i can only run 1 VM at a time with VMplayer. So, i will switch to bridged mode and change the IP scheme, and the NTP server from the CLI.
+
+
