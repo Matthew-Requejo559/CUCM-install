@@ -70,6 +70,41 @@ You can download CUCM from Cisco on a trial basis, or you can find it from one o
 
 # **if you run into a 404 error when trying to log into admin portal from the web GUI for the first time, try restarting the tomcat service from the CLI with: utils service restart Cisco Tomcat**
 
-# so, we have CUCM set up. Great! But there is a problem. We are in NAT mode, so, we cannot access CUCM from any device but the host machine. There is no router between the host and CUCM, so outside traffic will not route to the VM. There are different methods around this, such as setting up virtual routers, or using a router from GNS3. BUt i can only run 1 VM at a time with VMplayer. So, i will switch to bridged mode and change the IP scheme, and the NTP server from the CLI.
+# so, we have CUCM set up. Great! But there is a problem. Since we are in NAT mode, we cannot access CUCM from any device but the host machine. There is no router between the host and CUCM, so outside traffic will not route to the VM. There are different methods around this, such as setting up virtual routers, or using a router from GNS3. BUt i can only run 1 VM at a time with VMplayer. So, i will switch to bridged mode and change the IP scheme, and the NTP server from the CLI.
 
+# **Change to Bridged mode**
+
+![040](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/f1892f9e-8b2b-4fa6-886d-c33f97b5d917)
+
+# **First, let's take a look at the NTP settings with this command: utils ntp status
+
+![041](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/00eba023-37c7-41e3-9b96-abdf0a459eea)
+
+# **Next, we want to check the network settings with this command: show network eth0
+
+![042](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/2f6777c6-5e26-4d7f-b027-da298d52ec94)
+
+# **Let's go ahead and change these settings to match the 192.168.1.x/24 scheme of my physical LAN with: set network ip eth0 192.168.1.250 255.255.255.0 192.168.1.1
+# **use the ? if you are unsure on how to syntax a command
+
+![043](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/96283fd5-fca9-4b17-9423-822d3d36a7ee)
+![044](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/bed112c1-5d22-4af1-9923-f60a6a70fd79)
+
+# **Before we change the NTP server to the new gateway, lets make sure we can reach it with: utils network ping 192.168.1.1 
+
+![045](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/a409302c-6b44-4de6-91be-637d1c6118f1)
+
+# **Ping Success! But, we recieved DUP! responses. This might be because we used a different IP than my physical machine and we are sharing the same physical NIC. So, maybe the router is responding to the ping twice? Let's see what happens if we change the CUCM ip to 192.168.1.166 to match my physical machine. I didnt screenshot it, but when i attemted to make the NTP the gateway, it reported unreachable. This is probably due to the DUP! ping responses as well.
+
+![046](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/6bcd5e39-2ffe-48d3-8722-f9a1c4537c75)
+
+# **Ping again now shows no DUP! replies. Great! lets try that NTP one more time.
+
+![047](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/2d7a8bcb-1076-49f1-8d4e-1a993cc229f9)
+
+# **NTP add with: utils ntp server add 192.168.1.1
+
+![048](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/b09c944d-279c-4975-b75d-acb2042a3ce9)
+
+# **Still broken. Let's try from the GUI
 
