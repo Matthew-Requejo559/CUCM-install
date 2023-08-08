@@ -1,5 +1,8 @@
 # CUCM-install
 CUCM install in VMware Player 17
+
+This is how i set up CUCM 12.5 on my home lab in VMware PLayer 17. I did not have ESXI to play with, so i made do with what i had. 
+You can download CUCM from Cisco on a trial basis, or you can find it from one of those Index Of listings. 
 ![001](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/e9bd66bd-b6b8-4907-930c-5bc00f35839a)
 ![002](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/b7a4df3f-0948-4919-a273-02eef1210e8a)
 ![003](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/7b824307-6006-470b-ae83-7cf94565c9d2)
