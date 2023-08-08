@@ -62,8 +62,12 @@ You can download CUCM from Cisco on a trial basis, or you can find it from one o
 ![0006](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/dcb68ec0-d602-436a-adec-ba4486084038)
 ![0007](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/b957b078-9b15-41db-be9b-65d84fd6e763)
 
+ # **after these changes setup completed successfully** 
 
+![037](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/2bbb3e7f-52a5-4fae-9ffe-a1311b77198c)
+![038](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/c2a09ba3-6801-452f-b872-c17c6739d957)
+![039](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/cc4960cf-8f77-4d96-a63f-688b8aeb465a)
 
+# **if you run into a 404 error when trying to log into admin portal from the web GUI for the first time, try restarting the tomcat service from the CLI with: utils service restart Cisco Tomcat**
 
-
-if you run into a 404 error when trying to log into admin portal from the web GUI for the first time, try restarting the tomcat service from the CLI with: utils service restart Cisco Tomcat
+# so, we have CUCM set up. But, we are in NAT mode, and we cannot access CUCM from any device but the host machine. This means that 
