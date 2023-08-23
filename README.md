@@ -128,5 +128,6 @@ You can download CUCM from Cisco on a trial basis, or you can find it from one o
 ![058](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/4aab1de0-da3f-48a4-af88-ff25919958a0)
 ![059](https://github.com/Matthew-Requejo559/CUCM-install/assets/136190678/b8b50a37-2822-4f84-a9e7-a2a40436f11f)
 
-# **Went back and changed phone NTP reference to reflect new IP.**
+# **Went back and changed phone NTP reference to reflect new IP. And now we are ready to start setting up some general configs for CUCM that will make adding phones and sites easier down the road. Please refer to my next guide on CUCM configs. https://github.com/Matthew-Requejo559/CUCM-Configs/tree/main**
+
 
